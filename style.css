@@ -1,0 +1,100 @@
+/* body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 80px 1fr;
+    grid-template-areas:
+    "a a a "
+    "b b b"
+    "c c c"
+}
+
+/* 1fr désigne la portion que lélèment prendra dans le body autrement dit 3 1fr signifique que l'écran sera divisé en 3  */
+/* .bloc:nth-child(1){
+    background: url(./image/ampoule.jpg) center/cover;
+    grid-area: a;
+}
+.bloc:nth-child(2){
+    background: red;
+    grid-area: b;
+}
+.bloc:nth-child(3){
+    background: pink;
+    grid-area: c;
+} */ 
+
+@import 
+url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import
+url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+
+
+img {
+    border-radius: 10%;
+}
+
+body {
+    margin: 10px 100px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: 30px;
+}
+
+nav .onglets {
+    margin-top: 35px;
+}
+
+nav .onglets a {
+    text-decoration: none;
+    color: #7f7e7e;
+    margin-right: 10px;
+}
+
+.articles {
+    margin-top: 30px;
+}
+
+.articles .article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.articles .article .left  img {
+    height: 300px;
+    width: 500px;
+    margin-top: 30px;
+}
+
+/* h1 {
+margin-left: 60px;
+width: 200px; 
+} */
+
+.articles .article .right{
+    margin-left: 30px;
+    max-width: 200px;
+    text-align: justify;
+}
+
+.articles .article .right p.date {
+    margin-right: 10px;
+    color: #7f7e7e;
+}
+
+.articles .article .right p.description {
+    width: 500px;
+    color: #2d2d2d;
+}
+
+
